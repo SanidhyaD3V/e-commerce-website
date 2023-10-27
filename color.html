@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    text-align: center;
+}
+
+.color-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#selected-color {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+    </style>
+    <script>
+        const colorOptions = document.querySelectorAll('.color-option');
+const selectedColor = document.getElementById('selected-color');
+
+colorOptions.forEach(option => {
+    option.addEventListener('click', (e) => {
+        const selected = e.target.getAttribute('data-color');
+        selectedColor.textContent = `Selected Color: ${selected}`;
+        selectedColor.style.color = selected;
+    });
+});
+
+    </script>
+</head>
+<body>
+    <div class="color-selector">
+        <div class="color-option" style="background-color: #FF5733;" data-color="#FF5733"></div>
+        <div class="color-option" style="background-color: #33FF57;" data-color="#33FF57"></div>
+        <div class="color-option" style="background-color: #5733FF;" data-color="#5733FF"></div>
+        <!-- Add more color options as needed -->
+    </div>
+    <div id="selected-color"></div>
+    
+</body>
+</html>

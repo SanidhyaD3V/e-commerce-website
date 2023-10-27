@@ -1,0 +1,575 @@
+/*
+Theme Name: My E-commerce Theme
+Author: Sanidhya Pandey
+Description: A custom WordPress theme for e-commerce
+Version: 1.0
+*/
+
+.body{
+    list-style-type: none;
+}
+.navbar{
+/* background:  rgba(201,190,177,0.6); */
+background: #fff;
+
+border-bottom: 1px solid grey;
+
+}
+
+.navbar-nav{
+    /* background: yellow; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Designs - Start */
+#designs .item {
+    /* border: 1px solid #fff5c0; */
+    transition: all 1s ease-in-out;
+    font-family: 'Baloo 2', cursive;
+    /* height: 240px; */
+    /* width: 310px; */
+  
+  }
+  
+  .add-event{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    /* background: rgba(0,0,0,0.1); */
+    box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #6ea23f;
+  }
+  
+  .add-event a h4{
+    padding-top: 10px;
+  }
+  
+  .post-slide {
+    margin:10px;
+    margin-bottom: 25px;
+  }
+  
+  .post-slide-banner {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .post-slide .post-info {
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .post-slide .post-info li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .post-slide .post-info i {
+    margin-right: 0;
+  }
+  
+  .post-slide .post-info a {
+    font-size: 0.6rem;
+    /* font-weight: bold; */
+    color: #fff5c0;
+    text-transform: uppercase;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+  }
+  
+  .post-slide .post-info li a:hover {
+    text-decoration: none;
+    color: #1dcfd1;
+  }
+  
+  .post-slide .post-img {
+    position: relative;
+  }
+  
+  .post-slide .post-img:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* opacity: 0; */
+    /* background: rgba(0,0,0,0.6); */
+    /* transition: opacity 0.90s linear 0s; */
+  }
+  
+  .post-slide:hover .post-img:before {
+    /* opacity: 1; */
+  }
+  
+  .post-slide-banner:hover .post-img:before {
+    /* opacity: 1; */
+  }
+  
+  .post-slide .post-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-slide-banner .post-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-slide .read {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    /* opacity: 0; */
+    transition: all 0.40s linear 0s;
+  }
+  
+  .post-slide:hover .read {
+    /* opacity: 1; */
+  }
+  
+  .post-slide .read:hover {
+    text-decoration: none;
+    color: deepskyblue;
+  }
+  
+  .post-slide .post-content {
+    padding: 10px 0 0 0;
+    position: relative;
+  }
+  
+  .post-slide .post-author {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px;
+    right: 10px;
+    overflow: hidden;
+    border: 4px solid white;
+  }
+  
+  .post-slide .post-author img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-slide .post-title {
+    font-size: 0.95rem;
+    /* font-weight: bold; */
+    color: #2F5233;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    transition: all 0.30s linear 0s;
+  }
+  
+  .post-slide .post-title:after {
+    content: "";
+    width: 25px;
+    display: block;
+    margin-top: 10px;
+    border-bottom: 4px solid #af6e4d;
+    /* border-bottom: 4px solid #444; */
+  }
+  
+  .post-slide .description {
+    /* color: white; */
+    color: #2F5233;
+    font-size: 0.8rem;
+    /* font-weight: 500; */
+  }
+  
+  .post-slide .post-content .viewbtn {
+    /* display: block; */
+    /* opacity: 0; */
+    /* transition: all 3s ease-in-out; */
+  }
+  
+  .item:hover .viewbtn {
+    /* display: block; */
+    /* opacity: 1; */
+    transition: all 0.6s ease-in-out;
+    /* transition: all 0.1s ease-in-out; */
+  }
+  
+  /* Designs End */
+
+  /* footer starts*/
+
+  .master-footer {
+    background: #424241;
+    padding: 40px 0;
+    position: relative;
+}
+
+@media (min-width: 991px) {
+    .master-footer {
+        padding: 70px 0;
+    }
+}
+
+@media (min-width: 1520px) {
+    .master-footer {
+        padding: 100px 0;
+    }
+}
+
+.master-footer .container-fluid {
+    max-width: 1280px;
+}
+
+.master-footer .footer__logo__icon {
+    margin: 0 0 40px;
+    display: block;
+}
+
+.master-footer .footer__logo__icon img.logo {
+    width: 240px;
+}
+
+@media (max-width: 991px) {
+    .master-footer .footer__logo__icon {
+        max-width: 200px;
+        margin: 0 auto 30px;
+    }
+
+    .master-footer .footer__logo__icon img.logo {
+        width: 200px;
+    }
+}
+
+.master-footer .footer_about p {
+    font-weight: 500;
+    color: #ffffff;
+    max-width: 250px;
+}
+
+@media (max-width: 991px) {
+    .master-footer .footer_about p {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .master-footer .footer_about {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.master-footer .footer_social {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.master-footer .footer_social li {
+    margin-right: 10px;
+}
+
+.master-footer .footer_social li a {
+    width: 50px;
+    height: 50px;
+    font-size: 19px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    border: 0px solid #090640;
+    border-radius: 10px;
+    background-color: #202427;
+    color: #6a6a6a;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.master-footer .footer_social li a i {
+    font-size: 19px;
+    line-height: 50px;
+}
+
+.master-footer .footer_social li a:hover {
+    color: #ffffff;
+}
+
+.master-footer .btn-white {
+    min-width: auto;
+    padding: 0 20px;
+    line-height: 40px;
+    font-size: 15px;
+    border: 0;
+}
+
+.master-footer .form-group input.form-control,
+.master-footer .form-group select.form-control,
+.master-footer .form-group textarea.form-control {
+    border: 1px solid #454749;
+    font-size: 15px;
+    background-color: transparent;
+    line-height: 34px;
+    height: 34px;
+    padding: 0 15px;
+    color: #ffffff;
+}
+
+.footer__links {
+    margin: 40px 0 30px;
+    text-align: center;
+}
+
+.footer__links h4 {
+    color: #ffffff;
+    /* background: red; */
+    position: relative;
+    left: 15px;
+}
+
+@media (min-width:1024px) {
+    .footer__links h4 {
+        /* color: #ffffff; */
+        /* background: red; */
+        position: relative;
+        left: 30px;
+    }
+}
+
+.footer__links ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    /* background: yellow; */
+}
+
+.footer__links ul li a {
+    color: #6a6a6a;
+    font-size: 15px;
+    line-height: 20px;
+    /* list-style-type: none; */
+    text-decoration: none;
+}
+
+.footer__links ul li a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .footer__links {
+        margin: 0 0 30px;
+        
+    }
+    #fooproduct{
+      margin-top: 30px;
+    }
+
+    .footer__links.newsletter {
+        max-width: 580px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 991px) {
+    .footer__links {
+        text-align: left;
+    }
+}
+
+.copyright {
+    padding: 20px 0;
+    color: #6a6a6a;
+    font-size: 14px;
+    background-color: #15191d;
+    margin: 0;
+}
+
+.copyright a {
+    color: #707070;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.copyright a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .copyright {
+        text-align: center;
+    }
+
+    .copyright .col-xl-5 {
+        margin-top: 12px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .copyright .col-xl-5 {
+        text-align: right;
+    }
+}
+
+.copyright .container-fluid {
+    max-width: 1280px;
+}
+  /* footer ends */
+
+  .form-control::placeholder {
+    font-size: 14px;
+    /* color: red; */
+    /* border-radius: 18px; */
+
+  }
+
+  #inpu{
+    /* background: red; */
+    border-radius: 0;
+  }
+
+  #inpubtn{
+    border-radius: 0;
+    background: #A78364;
+    border: none;
+    color: #fff;
+  }
+
+  .filter-container {
+    text-align: center;
+    margin: 20px 10px;
+}
+
+#filterInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.responsive-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.responsive-list li {
+    width: calc(33.33% - 20px);
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .responsive-list li {
+        width: calc(50% - 20px);
+    }
+}
+
+/* .material-symbols-outlined.favorite {
+  font-variation-settings:
+  'FILL' red,
+
+} */
+
+.color-selector {
+  position: relative;
+  left: -7px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* margin: 20px; */
+  /* background: red; */
+  padding: 0;
+}
+
+.color-option {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  
+}
+
+.totalprod{
+ margin-left: 1%; 
+
+}
+
+.totalprod-2{
+  margin-right: 1%; 
+}
+.spandrop{
+ 
+  position: relative;
+  top: 3px;
+}
+
+.all-filter {
+
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  top: -3px;
+  color: #bbb;
+}
+
+.navcontainer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background: red; */
+}
+.filter-by-price{
+  color:#000; color:#A78364;; font-size:13px;font-weight:600;
+}
+
+.filter-by-price-icon{
+  font-size: 14px;
+}
+
+@media (max-width:1024px) {
+  .filter-by-price{
+    font-size:15px;font-weight:600;
+  }
+  .filter-by-price-icon{
+  font-size: 16px !important;
+  /* background: red; */
+  color: #bbb;
+}
+.all-filter {
+
+  font-size: 14px;
+  
+}
+.viewline{
+  margin-top: 80px;
+  /* background: red; */
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.footericon{
+  font-size: 15px;
+  color: #6A6A6A;
+  /* background: red; */
+  /* padding-bottom: 20px; */
+  
+}
+}
+
